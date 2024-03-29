@@ -1,0 +1,11 @@
+{
+    "name": {
+        "message": "Switching between en-us and another language"
+    },
+    "description": {
+        "message": "Create a link to switch en-us in Microsoft URL to another language and vice versa."
+    },
+    "icon": {
+        "message": "Switching between en-us and another language"
+    }
+}

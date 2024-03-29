@@ -1,0 +1,11 @@
+{
+    "name": {
+        "message": "en-us と他の言語の切り替え"
+    },
+    "description": {
+        "message": "MicrosoftのURL内のen-usを他の言語に、またはその逆に切り替えるリンクを作成する。"
+    },
+    "icon": {
+        "message": "en-us と他の言語の切り替え"
+    }
+}
