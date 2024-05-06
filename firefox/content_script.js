@@ -70,6 +70,8 @@ let langitems = [
     "zh-tw",
 ];
 
+let langElement;
+
 browser.storage.local.get("lang").then((result) => {
 
     let url = location;
@@ -84,7 +86,7 @@ browser.storage.local.get("lang").then((result) => {
         });
 
         if (currentLang != "") {
-            let langElement = document.createElement('a');
+            langElement = document.createElement('a');
             let langName = (currentLang == "en-us") ? result.lang : "en-us";
             langElement.innerText = langName;
             langElement.style.position = "fixed";
@@ -104,3 +106,9 @@ browser.storage.local.get("lang").then((result) => {
     }
 });
 
+//when the fragment identifier of the URL has changed.
+window.addEventListener("hashchange", () => {
+    if (langElement) {
+        langElement.hash = location.hash;
+    }
+});
